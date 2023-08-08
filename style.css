@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    background-color: #F2F2F2;
+    padding: clamp(35px, 8%, 70px);
+}
+
+main {
+    display: flex;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-logo {
+    width: 150px;
+    margin-bottom: 60px;
+}
+
+.login-title {
+    color: #022601;
+    font-size: 1.7em;
+    margin-bottom: 30px;
+}
+
+.login-label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.input {
+    width: 100%;
+    background-color: #D9B777;
+    border: 2px solid #022601;
+    border-radius: 30px, 30px;
+    outline: none;
+    font-size: 0.8em;
+    padding: 25px 10px 10px;
+    font-weight: 600;
+    color: #022601;
+}
+
+.login-label span {
+    position: absolute;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #022601;
+    margin: 10px;
+    cursor: text;
+    transition: all 200ms ease;
+}
+
+.input:focus {
+    background-color: #F2F2F2;
+    border: 2px solid #022601;
+}
+
+.login-label .span-active {
+    font-size: 0.6em;
+    margin: 8px 10px ;
+}
+
+.login-icons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login-icons img {
+    width: 20px;
+}
+
+.icons-button {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.login-icons .icons-button:nth-child(1) {
+    background-color: #f2f2f2;
+}
+
+.login-icons .icons-button:nth-child(2) {
+    background-color: #F2F2F2;
+}
+
+.login-icons .icons-button:nth-child(3) {
+    background-color:#F2F2F2;
+}
+
+.login-label-chekbox {
+    width: 100%;
+    margin: 15px 0 50px;
+    font-size: 0.9em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.input-checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: lightgray;
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+.input-checkbox:checked {
+    background-color: #D9B777;
+}
+
+.input-checkbox:checked::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: 3px solid #68BF3F;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 6px;
+}
+
+.login-button {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9B777;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.login-button svg {
+ fill: #68BF3F;
+}
+
+.login-button:disabled {
+    cursor: auto;
+    background-color: white;
+    border: 2px solid  #F2F2F2;
+}
+
+.login-button:disabled svg {
+    fill: #022601;
+}
+.login-link {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #022601;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.wallpaper {
+    width: 100%;
+    background-image: url(imagens/fundo-site.webp);
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
